@@ -1,0 +1,24 @@
+name: Node CI/CD
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: Install deps
+      run: npm install
+
+    - name: Run tests
+      run: npm test

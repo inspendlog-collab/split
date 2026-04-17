@@ -6,7 +6,9 @@ app.get("/", (req, res) => {
 	console.log("Test");
 	res.send("hello");
 });
-
+app.post("/",(req, res)=>{
+	
+});
 server.use(app);
 server.listen(3002, () => {
 	console.log("Running The Server");
