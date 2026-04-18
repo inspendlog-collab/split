@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 	res.send("hello");
 });
 app.post("/",(req, res)=>{
-	
+	console.log("Rest");
 });
 server.use(app);
 server.listen(3002, () => {
