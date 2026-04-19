@@ -34,7 +34,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /var/www/html/split
+          cd /var/www/html/split/split
           git pull origin main
           npm install
           pm2 restart all
