@@ -35,6 +35,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           cd /var/www/html/split/split
-          git pull origin main
+          git pull origin master
           npm install
           pm2 restart all

@@ -12,6 +12,11 @@ app.get("/:id", (req, res) => {
 	res.send("hello");
 });
 
+app.get("/:id/:id1", (req, res) => {
+	console.log("Test");
+	res.send("hello");
+});
+
 app.post("/",(req, res)=>{
 	console.log("Rest");
 });
